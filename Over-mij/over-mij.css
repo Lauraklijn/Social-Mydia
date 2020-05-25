@@ -1,0 +1,126 @@
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: absolute;
+  font-family: "Heebo", sans-serif;
+
+  font-weight: lighter;
+
+  height: 10%;
+  text-align: left;
+  color: black;
+  padding: 3%;
+  font-size: 4vw;
+  left: 3%;
+}
+
+.logo {
+  position: absolute;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.623);
+  padding: 1.5%;
+  font-size: 2.5vw;
+  left: 2%;
+}
+/* 
+.portret {
+  position: absolute;
+  width: 30%;
+  height: 70%;
+
+  margin-top: 10%;
+  margin-left: 5%;
+  border: solid;
+  border-color: black;
+  z-index: 2;
+} */
+
+.section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    rgba(226, 226, 226, 0.616),
+    rgba(255, 255, 255, 0.507)
+  );
+
+  /* Preserve aspet ratio */
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* opacity: 0.5; */
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 8%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.596);
+  color: white;
+  text-align: center;
+  font-family: "Heebo", sans-serif;
+
+  font-weight: lighter;
+}
+
+.box {
+  position: absolute;
+  top: 55%;
+
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: 900px;
+  height: 500px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.432);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  z-index: 1;
+}
+
+.box:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.box .imgBx {
+  width: 150px;
+  flex: 0 0 150px;
+  z-index: 2;
+}
+
+.box .imgBx img {
+  max-width: 200%;
+  margin-left: -120%;
+  z-index: 3;
+  border: 5px solid rgba(0, 0, 0, 0.452);
+}
+
+.box .content {
+  padding-left: 20px;
+}
+
+.box .content h2 {
+  margin: 0;
+  padding-left: 0;
+  padding-top: 3%;
+  color: rgba(0, 0, 0, 0.767);
+  font-family: "Heebo", sans-serif;
+}
+
+.box .content p {
+  margin: 0;
+  padding: 10px 0 0;
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.651);
+  font-family: "Heebo", sans-serif;
+
+  font-weight: lighter;
+}
