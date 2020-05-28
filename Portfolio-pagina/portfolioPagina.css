@@ -1,7 +1,8 @@
 .body {
   margin: 0;
   padding: 0;
-  background: #262626;
+  /* background: #262626; */
+  background-color: rgb(231, 231, 231);
 }
 
 .header {
@@ -45,11 +46,12 @@ body:before {
   left: 0;
   top: 0;
   z-index: -10;
-  background-image: url(../img/Hout.jpeg);
+  background-color: rgb(231, 231, 231);
+  /* background-image: url(../img/achtergrond1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left top;
-  opacity: 0.5;
+  opacity: 0.3; */
 }
 
 /* .section {
@@ -142,4 +144,18 @@ body:before {
   font-weight: lighter;
   color: white;
   font-size: 1.5vw;
+}
+
+.container .box .details .content .fa {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2vw;
+  transition: 0.5s;
+  color: white;
+}
+
+.container .box .details .content .fa:hover {
+  color: blue;
 }
