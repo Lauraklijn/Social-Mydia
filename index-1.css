@@ -14,7 +14,7 @@ body:before {
   top: 0;
 
   z-index: -10;
-  /* background-color: rgb(231, 231, 231); */
+
   background-image: url(./img/achtergrond1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,7 +58,7 @@ body:before {
 }
 
 .container {
-  position: relative;
+  position: flex;
   width: 110%;
   height: 60%;
   margin: 43.5% auto;
@@ -414,4 +414,33 @@ body:before {
   width: 100%;
   left: 0%;
   border: solid 8px rgb(238, 235, 231);
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    position: relative;
+    width: 110%;
+    height: 60%;
+    margin: 43.5% auto;
+    bottom: 20%;
+    left: 3%;
+  }
+
+  .container .box {
+    position: relative;
+    width: calc(27%);
+    height: calc(40%);
+    background: rgba(255, 255, 255, 0.432);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+
+    float: left;
+    right: 1%;
+    margin: 1%;
+
+    box-sizing: border-box;
+    overflow: hidden;
+
+    border: solid 2px rgba(0, 0, 0, 0.308);
+    color: rgba(119, 114, 114, 0.151);
+  }
 }

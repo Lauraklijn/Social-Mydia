@@ -1,0 +1,330 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(236, 234, 234);
+}
+
+.background {
+  position: absolute;
+
+  background-image: url(./img/achtergrond1.jpeg);
+
+  background-repeat: no-repeat;
+  height: 60%;
+  width: 100%;
+  background-size: cover;
+  z-index: -10;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 2%;
+  text-decoration: none;
+  font-size: 1.5vw;
+  font-family: "Heebo", sans-serif;
+  font-weight: lighter;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+/* .topnav a.active {
+  background-color: rgba(247, 228, 201, 0.541);
+  color: white;
+  float: left;
+} */
+
+.content {
+  position: relative;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  opacity: 0.8;
+  position: absolute;
+  /* font-family: "Amatic SC", cursive; */
+  font-family: "Heebo", sans-serif;
+  font-weight: lighter;
+  color: black;
+  padding: 8%;
+  font-size: 6vw;
+  left: 23%;
+  top: 20%;
+  border: solid rgba(255, 255, 255, 0.76) 5px;
+}
+.boxes {
+  position: relative;
+  display: flex;
+
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  position: relative;
+
+  height: 80%;
+  width: 30%;
+  margin: 2%;
+  margin-top: 30%;
+  box-sizing: content-box;
+  border: solid 2px rgba(0, 0, 0, 0.308);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  /* background: rgb(238, 235, 231); */
+  /* background-image: url(./img/BDDACB11-BD3D-4C30-B1B8-19F1C7FACD4A_1_105_c.jpeg); */
+
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.box:hover .icon {
+  top: 10%;
+  left: calc(50% - 10%);
+  width: 20%;
+  height: 25%;
+  border-radius: 50%;
+}
+
+.box .icon .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2vw;
+  transition: 0.5s;
+  color: rgba(0, 0, 0, 0.486);
+}
+.box .icon .fa {
+  font-size: 4vw;
+  /* color: white; */
+  color: black;
+
+  /* color: rgba(255, 255, 255, 0.664); */
+}
+
+.box .box-content {
+  position: absolute;
+  top: 100%;
+  height: calc(100% - 100%);
+  text-align: center;
+  padding: 5%;
+  box-sizing: border-box;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.box:hover .box-content {
+  top: 33%;
+  opacity: 1;
+}
+
+.box .box-content {
+  top: 33%;
+  opacity: 1;
+}
+
+.box h3 {
+  margin: 2% 0 2%;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.651);
+  /* color: rgba(255, 255, 255, 0.815); */
+  font-size: 2vw;
+  font-family: "Heebo", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  /* font-weight: lighter; */
+}
+
+.box p {
+  margin: 2%;
+  padding: 0;
+  /* color: white; */
+  /* color: rgba(216, 216, 216, 0.699); */
+  color: rgba(0, 0, 0, 0.651);
+  font-family: "Heebo", sans-serif;
+
+  font-weight: lighter;
+  font-size: 1vw;
+  /* font-family: "Montserrat", sans-serif; */
+}
+
+.button {
+  background-color: rgba(247, 228, 201, 0.541);
+  position: absolute;
+  right: 5%;
+  color: rgba(0, 0, 0, 0.596);
+  font-family: "Heebo", sans-serif;
+  font-size: 1vw;
+  height: 40%;
+  line-height: 40%;
+  width: 30%;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 3%;
+  border: 1px solid rgba(0, 0, 0, 0.308);
+  text-shadow: red;
+}
+.button:hover {
+  color: rgba(0, 0, 0, 0.596);
+  font-weight: bold;
+}
+.footer {
+  background-color: gray;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .boxes {
+    position: relative;
+  }
+
+  .box {
+    position: relative;
+    border: solid black;
+    height: 60%;
+    width: 40%;
+    margin: 2%;
+    margin-top: 42%;
+    box-sizing: content-box;
+  }
+}
+
+/* Ipad - Horizontaal */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .boxes {
+    position: relative;
+  }
+
+  .box {
+    position: relative;
+
+    height: 60%;
+    width: 60%;
+    margin: 2%;
+    margin-top: 42%;
+    box-sizing: content-box;
+    border: solid 2px rgba(0, 0, 0, 0.308);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Ipad Pro - Horizontaal */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .boxes {
+    position: relative;
+  }
+
+  .box {
+    position: relative;
+    border: solid 2px rgba(0, 0, 0, 0.308);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    height: 60%;
+    width: 60%;
+    margin: 2%;
+    margin-top: 42%;
+    box-sizing: content-box;
+  }
+}
+/* Iphone */
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+  .boxes {
+    position: relative;
+    display: flex;
+
+    height: 100%;
+    width: 100%;
+  }
+
+  #box1 {
+    position: absolute;
+    border: solid 2px rgba(0, 0, 0, 0.308);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    height: 50%;
+    width: 50%;
+    left: 22%;
+    top: 10%;
+
+    /* box-sizing: content-box; */
+  }
+
+  #box2 {
+    position: absolute;
+    border: solid 2px rgba(0, 0, 0, 0.308);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    height: 50%;
+    width: 50%;
+    left: 22%;
+    top: 70%;
+    /* box-sizing: content-box; */
+  }
+
+  #box3 {
+    position: absolute;
+    border: solid 2px rgba(0, 0, 0, 0.308);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    height: 50%;
+    width: 50%;
+    left: 22%;
+    top: 130%;
+    /* box-sizing: content-box; */
+  }
+}
+
+/* Iphone 5/SE */
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+  .boxes {
+    position: relative;
+    display: flex;
+
+    height: 100%;
+    width: 100%;
+  }
+
+  #box1 {
+    position: absolute;
+
+    border: solid 2px rgba(0, 0, 0, 0.308);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    height: 50%;
+    width: 50%;
+    left: 22%;
+    top: 10%;
+
+    /* box-sizing: content-box; */
+  }
+
+  #box2 {
+    position: absolute;
+    border: solid 2px rgba(0, 0, 0, 0.308);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    height: 50%;
+    width: 50%;
+    left: 22%;
+    top: 70%;
+    /* box-sizing: content-box; */
+  }
+
+  #box3 {
+    position: absolute;
+    border: solid 2px rgba(0, 0, 0, 0.308);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    height: 50%;
+    width: 50%;
+    left: 22%;
+    top: 130%;
+    /* box-sizing: content-box; */
+  }
+}
