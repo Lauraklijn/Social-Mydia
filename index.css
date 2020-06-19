@@ -1,16 +1,22 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(236, 234, 234);
 }
 
 .background {
   position: absolute;
 
+  /* background-image: linear-gradient(
+      to top,
+      rgb(255, 255, 255),
+      rgba(255, 255, 255, 0.39),
+      rgba(255, 255, 255, 0.178),
+      rgba(255, 255, 255, 0)
+    ),
+    url(./img/achtergrond1.jpeg); */
   background-image: url(./img/achtergrond1.jpeg);
-
   background-repeat: no-repeat;
-  height: 60%;
+  height: 70%;
   width: 100%;
   background-size: cover;
   z-index: -10;
@@ -69,13 +75,16 @@ body {
 .box {
   position: relative;
 
-  height: 80%;
+  height: 70%;
   width: 30%;
   margin: 2%;
-  margin-top: 30%;
+  margin-top: 40%;
+
   box-sizing: content-box;
-  border: solid 2px rgba(0, 0, 0, 0.308);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  /* border: solid 1px rgba(0, 0, 0, 0.308); */
+  border: solid 1px rgba(0, 0, 0, 0.308);
+
+  /* box-shadow: 0 5px 15px rgba(181, 184, 182, 0.5); */
 }
 
 .box .icon {
@@ -84,20 +93,25 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  /* background: rgb(218, 214, 214); */
   background: white;
-  /* background: rgb(238, 235, 231); */
   /* background-image: url(./img/BDDACB11-BD3D-4C30-B1B8-19F1C7FACD4A_1_105_c.jpeg); */
 
   transition: 0.5s;
   z-index: 1;
+  font-size: 1vw;
 }
 
 .box:hover .icon {
   top: 10%;
   left: calc(50% - 10%);
   width: 20%;
-  height: 25%;
+  height: 20%;
   border-radius: 50%;
+}
+
+.box:hover .icon .fa {
+  font-size: 2.5vw;
 }
 
 .box .icon .fa {
@@ -105,16 +119,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 2vw;
+  font-size: 7vw;
   transition: 0.5s;
   color: rgba(0, 0, 0, 0.486);
-}
-.box .icon .fa {
-  font-size: 4vw;
-  /* color: white; */
-  color: black;
-
-  /* color: rgba(255, 255, 255, 0.664); */
+  /* color: rgb(218, 188, 193); */
 }
 
 .box .box-content {
@@ -163,7 +171,7 @@ body {
 }
 
 .button {
-  background-color: rgba(247, 228, 201, 0.541);
+  background-color: rgb(214, 172, 179);
   position: absolute;
   right: 5%;
   color: rgba(0, 0, 0, 0.596);
@@ -184,6 +192,31 @@ body {
 }
 .footer {
   background-color: gray;
+}
+
+.info {
+  position: absolute;
+  background-color: rgb(255, 227, 223);
+  bottom: -120%;
+  width: 100%;
+  height: 30%;
+}
+
+.info h3 {
+  font-family: "Heebo", sans-serif;
+  font-weight: lighter;
+  color: black;
+  text-align: center;
+  font-size: 2vw;
+}
+
+.info .fa {
+  position: relative;
+  margin: 2%;
+  color: black;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 2vw;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {

@@ -42,14 +42,15 @@ h1 {
 .container {
   width: 100%;
   position: relative;
-  margin-top: 30%;
+  margin-top: 35%;
 }
 
 .container .box {
-  list-style: row;
+  /* list-style: row; */
+  position: relative;
   float: left;
+  left: 7%;
   width: 25%;
-  margin-top: 30%;
 
   margin: 2%;
 }
@@ -67,7 +68,8 @@ h1 {
 }
 
 .container .box .fa {
-  color: rgb(114, 212, 175);
+  /* color: rgb(114, 212, 175); */
+  color: rgb(214, 172, 179);
   font-size: 4vw;
 }
 .container .box p {
