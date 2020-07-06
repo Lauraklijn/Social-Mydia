@@ -12,7 +12,7 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  color: #777;
+  color: #444444;
 }
 h1,
 h2,
@@ -616,7 +616,7 @@ a.background-dark:link,
 .primary-color-dark .background-primary a:visited,
 .primary-color-dark .background-primary a:hover,
 .primary-color-dark .background-primary a:active {
-  color: #7697a2;
+  color: #444444;
 }
 .background-white h1,
 .background-white h2,
@@ -721,7 +721,13 @@ a.background-primary:link,
 .text-white *,
 .primary-color-white .text-primary,
 .primary-color-white .text-primary * {
-  color: #fff !important;
+  /* color: #fff !important; */
+  color: #fff;
+}
+
+.text-homepage-foto {
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.63) 0.1em 0.1em 0.2em;
 }
 
 /* Tekst homepagina onderaan*/
@@ -917,6 +923,7 @@ a.button.button-white-stroke:visited,
 .primary-color-white a.button.button-primary-stroke:visited {
   background: none;
   border: 1px solid #fff;
+  text-shadow: black 0.1em 0.1em 0.2em;
   box-shadow: none;
 }
 .button.button-white-stroke:hover,
@@ -1017,9 +1024,9 @@ a.button.button-dark-stroke:hover,
 }
 .content-center-vertical {
   position: absolute;
-  left: 0;
+  left: 20%;
   right: 0;
-  top: 50%;
+  top: 55%;
   transform: translateY(-50%);
   -o-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -2526,4 +2533,24 @@ a.button:visited {
 
 .image-test {
   width: 25%;
+}
+
+.background-footer-home {
+  background-color: white;
+}
+
+.opacy-image {
+  opacity: 1;
+}
+
+/* .text-color-laura {
+  color: gray;
+} */
+
+text-icon-color {
+  color: rgba(216, 14, 14, 0.5);
+}
+
+text-laura {
+  color: red;
 }
