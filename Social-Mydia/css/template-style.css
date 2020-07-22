@@ -167,7 +167,7 @@ blockquote {
 a.text-tag:link {
   border: 1px solid #e5e5e5;
   display: inline-block;
-  float: left;
+  /* float: left; */
   font-size: 0.75rem;
   margin: 1px 2px 1px 0;
   padding: 6px 9px;
@@ -1623,7 +1623,7 @@ p.form-success {
     margin-right: 0.625rem;
     max-width: 100%;
     text-align: center;
-    vertical-align: middle;
+    /* vertical-align: middle; */
   }
   .nav-text::after {
     color: #002633;
@@ -2340,14 +2340,14 @@ nav.fixed .top-nav li a,
 .fixed nav .top-nav li a {
   color: #444;
 }
-nav.fixed .logo-white,
+/* nav.fixed .logo-white,
 .fixed nav .logo-white {
   display: none;
 }
 nav.fixed .logo-dark,
 .fixed nav .logo-dark {
   display: block;
-}
+} */
 
 /*Achtergrond homepagina navigatiebalk */
 .background-transparent {
@@ -2358,7 +2358,8 @@ nav.fixed .logo-dark,
   margin: 0;
   max-width: 200px;
   position: relative;
-  top: 12px;
+  top: 20px;
+  /* left: 8px; */
   width: 100%;
 }
 .top-nav li a {
@@ -2577,10 +2578,36 @@ text-laura {
   color: red;
 }
 
-.icon-blauw {
-  color: rgb(46, 114, 170);
+.icon-kleur-footer {
+  color: rgb(151, 151, 151);
 }
 
 /* .border-proberen {
   border: solid 1px rgba(150, 150, 150, 0.253);
 } */
+
+.footer-kleur {
+  background-color: rgb(240, 240, 240);
+  /* border: solid 4px white; */
+}
+
+.icon-blauw {
+  color: rgb(37, 97, 187);
+}
+
+.icon-grey {
+  color: rgb(151, 151, 151);
+}
+
+.icon-yellow {
+  color: rgb(255, 196, 0);
+}
+
+.icon-red {
+  color: rgb(184, 3, 3);
+}
+
+.border-test {
+  border: solid 1px rgba(151, 151, 151, 0.253);
+  box-shadow: 1px 1px 4px rgba(141, 141, 141, 0.5);
+}
